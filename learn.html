@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./learn_styling.css">
     <title>Prework Study Guide</title>
-    <input id = "date" type="datetime-local"/>
+    
   </head>
   <body>
     <header id="top">
       <h1>Prework Study Guide</h1>
       <img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="Profile image of cat wearing a bow tie." />
-      <input id="clock" type="datetime-local"/>
+      
     </header>
     <main>
       <img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="Profile image of cat wearing a bow tie." />
@@ -73,7 +73,14 @@
     </main>
 
     <footer>
-      <p>I can code!</p>
+      <p>I can Code!</p>
+      <p id="p1"></p>
+      <script>
+        var date = new Date();
+        var current_date =  (date.getMonth()+1) + " - " + date.getDate()
+         + " - " + date.getFullYear();
+         document.getElementById("p1").innerHTML = current_date;
+      </script>
     </footer>
   </body>
 </html>
