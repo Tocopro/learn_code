@@ -71,30 +71,17 @@
         </ul>
       </section>
     </main>
-
-    <footer>
+    <footer>      
       <p class="note">I can Code!</p>
+      
+      <button class="b" id="mybtn" type="button" onclick="file_name()">Click</button>
       <p id="p1" class="sec"></p>
       <script>
-        var shapes = ["triangle", "square", "pentagon", "circle"];
-        for(var x = 0; x < shapes.length; x++) {
-        console.log(shapes[x]);
-         }
-
-            /*
-              var topic = "HTML";
-              if (topic === 'HTML') {
-              console.log("Let's study HTML!");
-              } else if (topic === 'CSS') {
-                console.log("Let's study CSS!");
-              } else if (topic === 'Git') {
-              console.log("Let's study Git!");
-              } else if (topic === 'JavaScript') {
-              console.log("Let's study JavaScript!");
-              } else {
-              console.log('Please try again!');
-              } */
-
+        const mybutton = document.getElementById("mybtn");
+        mybutton.addEventListener("click", function(e) {
+          
+        });
+             
         var date = new Date();
         var current_date =  (date.getMonth()+1) + " - " + date.getDate()
          + " - " + date.getFullYear();
