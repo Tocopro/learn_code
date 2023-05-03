@@ -81,3 +81,37 @@
     display: inline-block;
     font-size: 30px;
   }
+  .photo
+  {
+    padding-top: 100px;
+    height: 900px;
+    width: 800px;
+  }
+  .button1
+  {
+    margin-top: 50px;
+    margin-left: 600px;
+  }
+  .image_notes
+  {
+    font-size: 20px;
+    color: black;
+  }
+  .clock
+  {
+    margin-left: 900px;
+    color: black;
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  .button1
+  {
+    font-family: Helvetica;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-color: blue;
+    border-radius: 5px;
+  }

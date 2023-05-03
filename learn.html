@@ -11,6 +11,7 @@
   <body>
     <header id="top">
       <h1 class="title">Prework Study Guide</h1>
+      <p class="clock" id="time_zone"></p> 
       <img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="Profile image of cat wearing a bow tie."class="image" />
       
     </header>
@@ -71,22 +72,21 @@
         </ul>
       </section>
     </main>
-    <footer>      
+    <footer>       
       <p class="note">I can Code!</p>
-      
-      <button class="b" id="mybtn" type="button" onclick="file_name()">Click</button>
-      <p id="p1" class="sec"></p>
-      <script>
-        const mybutton = document.getElementById("mybtn");
-        mybutton.addEventListener("click", function(e) {
-          
-        });
-             
-        var date = new Date();
-        var current_date =  (date.getMonth()+1) + " - " + date.getDate()
-         + " - " + date.getFullYear();
-         document.getElementById("p1").innerHTML = current_date;
-      </script>
-    </footer>
+      <p class="image_notes">
+        Click the button to see the blueprint for the Bootcamp
+      </p>       
+        <input type="button" class="button1" value="CLICK" onclick="file_name();" />
+<img id="source" class="photo" src=".\Document_files\image002.png" style="visibility:hidden"/>  
+<script>
+  var date = new Date();
+      let calendar =  date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();      
+      document.getElementById("time_zone").innerHTML = calendar;
+ function file_name() {
+     document.getElementById('source').style.visibility = "visible";
+    }     
+       </script>
+      </footer>
   </body>
 </html>
