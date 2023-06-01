@@ -22,6 +22,12 @@
     padding-bottom: 50px;
 
    }
+   .f_line
+   {
+    font-size: 10px;
+    font-weight: bold;
+    font-style: italic;
+   }
    
    .image2{
     padding-top: 30px;
@@ -97,13 +103,14 @@
     font-size: 20px;
     color: black;
   }
-  .clock
+  .date_format,.clock
   {
     margin-left: 900px;
     color: black;
     font-family: Helvetica;
     font-weight: bold;
   }
+  
   .button1
   {
     font-family: Helvetica;

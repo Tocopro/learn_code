@@ -10,13 +10,18 @@
   </head>
   <body>
     <header id="top">
-      <h1 class="title">Prework Study Guide</h1>
-      <p class="clock" id="time_zone"></p> 
-      <img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="Profile image of cat wearing a bow tie."class="image" />
+      <h1 class="title">Prework Study Guide</h1>      
+      <p class="date_format" id="current_date"></p>
+      <p class="clock" id="current-time"></p>
+      <!--<img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png" alt="Profile image of cat wearing a bow tie."class="image" />-->
+     
       
     </header>
     <main>
       <img src=".\Desktop_computer_clipart_-_Yellow_theme.svg.png"alt="Profile image of cat wearing a bow tie." class="image2" />
+      <p class="f_line">These images of Desktop computer have been borrowed <br>
+        (source -> https://en.wikipedia.org/wiki/Desktop_computer#/media/File:Desktop_computer_clipart_-_Yellow_theme.svg)
+      </p>
     </header>
 
     <main>
@@ -91,13 +96,24 @@
         <input type="button" class="button1" value="CLICK" onclick="file_name();" />
 <img id="source" class="photo" src=".\Document_files\image002.png" style="visibility:hidden"/> 
  
-<script src="script.js">
-  var date = new Date();
-      let calendar =  date.getDate() + " - " + date.getMonth() + " - " + date.getFullYear();      
-      document.getElementById("time_zone").innerHTML = calendar;
- function file_name() {
+<script >
+      let time = document.getElementById("current-time");      
+      setInterval(() => {
+        let d = new Date();
+      time.innerHTML = d.toLocaleTimeString();
+      }, 1000)
+      
+               
+      let date = document.getElementById("current_date");
+      setInterval(() =>{
+        let day = new Date();
+        date.innerHTML = day.toDateString();
+      }, 1000)
+ function file_name()
+  {
      document.getElementById('source').style.visibility = "visible";
-    }     
+    } 
+     
        </script>
       </footer>
   </body>
