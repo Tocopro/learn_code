@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Self BIO</title>
+        <link rel="stylesheet" href="student_bio.css" >
+    </head>
+    <body>
+        <div class="section1">
+            <p >First Name: Nicholas  Last Name: Wachira </p>
+        </div>
+        <div class="section2">
+            <h6>Student Information</h6>
+        </div>
+        <div class="section3A">
+            <p class="2A1">
+                I am a new student to coding with this Bootcamp course<br>
+                The last 10 years I was working with the HealthCare Institution<br>
+                My interest in Coding was because the change that has already started <br>
+                in the HealthCare Field.<br>
+                My goal in the future is to work along with the technology sector in <br>
+                in healthcare to revolutionize healthcare by the introducing new tools<br>
+                for HealthCare workers to utiilize.<br>
+            </p>
+        </div>
+        <div class="section3B">
+            <img class="3B1" src="C:\Users\NEAK\Bootcamp2\image\WIN_20230605_17_57_26_Pro.jpg" height="200" width="400" alt="">
+    
+        </div>
+
+
+        <div class="section4">
+            <h1>Contact Information</h1>
+            <ul>
+                <li class="Email">Email: nicwac200g@gmail.com</li>
+                <li class="Github">GitHub: To Be Displayed</li>
+                <li class="PortFolio">PortFolio: To Be Displayed</li>
+            </ul>
+        </div>
+        
+
+
+    </body>
+</html>
